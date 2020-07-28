@@ -1,0 +1,7 @@
+#!/bin/bash
+
+LOOPDIR=$(basename $1 .iso)
+MOUNTDIR=/mnt/iso/$LOOPDIR
+sudo mkdir -p $MOUNTDIR
+sudo mount -o loop $1 $MOUNTDIR
+

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+LOOPDIR=$(basename $1 .iso)
+sudo umount $1
+sudo rm -rf /mnt/iso/$LOOPDIR
+

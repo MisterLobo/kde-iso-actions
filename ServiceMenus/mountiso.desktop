@@ -1,0 +1,22 @@
+[Desktop Entry]
+Type=Service
+Version=2.9.1
+Encoding=UTF-8
+Icon=kgpg
+Actions=ToFile;Unmount
+ServiceTypes=KonqPopupMenu/Plugin,application/x-cd-image,application/x-raw-disk-image
+X-KDE-Priority=TopLevel
+X-KDE-Submenu=&Actions for ISO
+#X-KDE-Submenu[xx]=Your string 'xx' is the country abbreviation
+
+[Desktop Action ToFile]
+Exec=pkexec isomount %F
+Icon=utilities-terminal
+Name=Mount ISO
+#Name[xx]=Your string 'xx' is the country abbreviation
+
+[Desktop Action Unmount]
+Exec=pkexec isounmount %F
+Icon=utilities-terminal
+Name=Unmount ISO
+#Name[xx]=Your string 'xx' is the country abbreviation
